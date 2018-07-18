@@ -6,3 +6,4 @@ the result like the image below.
 <img src="https://github.com/takyamamoto/Nonlinear-Dynamics-with-Python/blob/imgs/Hodgkin-Huxley_animation.gif" width=50%>
 
 ## FitzHugh-Nagumo model phase field
+<img src="https://github.com/takyamamoto/Nonlinear-Dynamics-with-Python/blob/imgs/FHN_PhaseField.png" width=60%>
