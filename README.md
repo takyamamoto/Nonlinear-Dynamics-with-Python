@@ -3,4 +3,4 @@
 the result like the image below.
 ![result](https://github.com/takyamamoto/Nonlinear-Dynamics-with-Python/blob/imgs/FitzHugh-Nagumo_animation.gif)
 ## Hodgikin-Huxley model
-->![result](https://github.com/takyamamoto/Nonlinear-Dynamics-with-Python/blob/imgs/Hodgkin-Huxley_animation.gif){:width="200px"}<-
+->![result]("https://github.com/takyamamoto/Nonlinear-Dynamics-with-Python/blob/imgs/Hodgkin-Huxley_animation.gif", width=50%)<-
