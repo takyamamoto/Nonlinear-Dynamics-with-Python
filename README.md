@@ -1,4 +1,6 @@
 # Nonlinear Dynamics with Python
+Python implimentation Nonlinear Dynamics Simulation
+
 ## Requirement
 ```
 Python 3.X
@@ -11,9 +13,11 @@ Run python file
 
 ## Demo
 ### FitzHugh-Nagumo model
-![result](https://github.com/takyamamoto/Nonlinear-Dynamics-with-Python/blob/imgs/FitzHugh-Nagumo_animation.gif)
+![result](https://github.com/takyamamoto/Nonlinear-Dynamics-with-Python/blob/imgs/FitzHugh-Nagumo_animation.gif)  
+
 ### Hodgikin-Huxley model
-<img src="https://github.com/takyamamoto/Nonlinear-Dynamics-with-Python/blob/imgs/Hodgkin-Huxley_animation.gif" width=50%>
+<img src="https://github.com/takyamamoto/Nonlinear-Dynamics-with-Python/blob/imgs/Hodgkin-Huxley_animation.gif" width=50%>  
+
 
 ### FitzHugh-Nagumo model phase field
 <img src="https://github.com/takyamamoto/Nonlinear-Dynamics-with-Python/blob/imgs/FHN_PhaseField.png" width=40%>
