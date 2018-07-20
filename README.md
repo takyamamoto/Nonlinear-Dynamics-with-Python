@@ -2,11 +2,9 @@
 Python implimentation Nonlinear Dynamics Simulation
 
 ## Requirement
-```
-Python 3.X
-matplotlib
-tqdm
-```
+- Python 3.X
+- matplotlib
+- tqdm
 
 ## Usage
 Run python file
