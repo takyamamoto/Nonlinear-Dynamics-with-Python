@@ -18,7 +18,7 @@ a = 0.7
 b = 0.8
 c = 10
 
-# 原点
+# beginning point
 u0 = 1.710
 v0 = 0.374
 X0 = [u0, v0]
@@ -43,21 +43,21 @@ def FHN(state, t):
 def PhaseField(u,v):
     #軌道を計算
     Xp = integrate.odeint(FHN, [u,v], t)
-    
+
     #軌道中の点と原点の距離を計算
     d = Xp-X0
     L2 = d[:,0]**2 + d[:,1]**2
-    
+
     #軌道中の点で最も原点に近い最初の点のindex(=time)を取得
     tau_0 = np.argmin(L2)
-    
+
     #周期で割って余りを出す
     tau = tau_0 % T
-    
+
     #位相を2piで割った値
     theta_per_2pi = 1 - tau / T
-    
-    #位相
+
+    #Phase
     #theta = theta_per_2pi * 2*np.pi
     return theta_per_2pi
 
@@ -67,7 +67,7 @@ U, V = np.meshgrid(np.arange(-3, 3, ds),
 ulen, vlen = U.shape
 arr_PhaseField = np.zeros((ulen,vlen))
 
-#網羅的に位相を計算
+#Compute Phase
 pbar = tqdm(total=ulen*vlen)
 for i in range (ulen):
     for j in range(vlen):
@@ -75,10 +75,10 @@ for i in range (ulen):
         v = V[i,j]
         arr_PhaseField[i,j] = PhaseField(u,v)
         pbar.update(1)
-        
+
 pbar.close()
 
-# ヒートマップを出力
+# Show heatmap 
 plt.figure(figsize=(5,5))
 sns.heatmap(arr_PhaseField, cmap = "hsv",
             xticklabels = False, yticklabels = False,
